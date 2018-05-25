@@ -11,7 +11,7 @@
             content: 'html内容',
             anim: 3,
             shade: false,
-            offset: ['0px', '160px']
+            offset: ['50%', '160px']
         });
     })
 

@@ -1,0 +1,17 @@
+{
+    "development": {
+        "version": "dev1.0",
+        "apiUrl": "http://10.42.6.244:8112",
+        "env": "development"
+    },
+    "production": {
+        "version": "ver1.0",
+        "apiUrl": "",
+        "env": "production"
+    },
+    "test": {
+        "version": "test1.0",
+        "apiUrl": "",
+        "env": "test"
+    }
+}

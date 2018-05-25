@@ -1,0 +1,230 @@
+/* 通用样式 */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  user-select: none;
+  //font-family: "新宋体";
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.w100p {
+  width: 100%;
+}
+
+.h100p {
+  height: 100%;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  height: 0;
+  content: "";
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.abs {
+  position: absolute;
+}
+
+.banner {
+  min-width: 1024px;
+}
+
+/* style */
+
+// 设置首页layer page层的样式
+.index-layui-page.layui-layer-page {
+  top: 50% !important;
+  margin-top: -1px * (255 / 2);
+  .layui-layer-content {
+    padding: 5px;
+  }
+}
+
+.header {
+  height: 57px;
+  background: url(../../assets/imgs/top.png) no-repeat center center / contain;
+  top: 0;
+  left: 0;
+  z-index: 501;
+}
+
+.map-container {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.map-container img {
+  max-width: 100%;
+}
+
+.aside {
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 501;
+}
+
+.aside.right-side {
+  left: auto;
+  right: 5px;
+}
+
+.aside li {
+  margin: 5px 0;
+}
+
+.aside li a {
+  display: block;
+  width: 150px;
+  height: 45px;
+  line-height: 45px;
+  //text-align: center;
+  padding-left: 45px;
+  background: url(../../assets/imgs/nav_bg.png);
+  color: #fff;
+  position: relative;
+  transition: background .3s;
+}
+
+.aside li a:hover {
+  background: url(../../assets/imgs/nav_bgh.png);
+}
+
+.footer {
+  bottom: 5px;
+  left: 0;
+  z-index: 501;
+  display: flex;
+  justify-content: center;
+}
+
+.footer ul {
+  display: inline-block;
+}
+
+.footer ul > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.footer li a {
+  display: block;
+  height: 86px;
+  width: 100px;
+  text-align: center;
+  background: url(../../assets/imgs/dnav_bg.png);
+  color: #fff;
+  position: relative;
+  transition: background .3s;
+}
+
+.footer li a:hover {
+  background: url(../../assets/imgs/dnav_bgh.png);
+}
+
+.footer li a span {
+  position: absolute;
+  width: 65px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* icon类 */
+.todos::before, // 待办任务
+.model-manger::before, // 模拟管理
+.order::before, // 情指中心
+.large-activity::before, // 大型活动
+.bg-manger::before, // 后台管理
+.danger-pub::before, // 危爆治安
+.special-pub::before, // 特行治安
+.security-pub::before, // 保安业治安
+.vip-site::before, // 重点场所
+.others-pub::before { // 治安类其他
+  content: '';
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  background-image: url(../../assets/imgs/spring_aside.png);
+}
+
+.todos::before {
+  //background: url(../../assets/imgs/dbrw.png);
+  background-position: 0 0;
+}
+
+.model-manger::before {
+  //background: url(../../assets/imgs/mxgl.png);
+  background-position: -29px 0;
+}
+
+.order::before {
+  //background: url(../../assets/imgs/qzzx.png);
+  background-position: -58px 0;
+}
+
+.large-activity::before {
+  //background: url(../../assets/imgs/dxhd.png);
+  background-position: 0 -29px;
+}
+
+.bg-manger::before {
+  //background: url(../../assets/imgs/htgl.png);
+  background-position: -29px -29px;
+}
+
+.danger-pub::before {
+  //background: url(../../assets/imgs/wbza.png);
+  background-position: -58px -29px;
+}
+
+.special-pub::before {
+  //background: url(../../assets/imgs/thza.png);
+  background-position: 0 -58px;
+}
+
+.security-pub::before {
+  //background: url(../../assets/imgs/bayza.png);
+  background-position: -29px -58px;
+}
+
+.vip-site::before {
+  //background: url(../../assets/imgs/zdcs.png);
+  background-position: -58px -58px;
+}
+
+.others-pub::before {
+  //background: url(../../assets/imgs/zaqtl.png);
+  background-position: 0 -87px;
+}

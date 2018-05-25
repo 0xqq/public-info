@@ -4,6 +4,7 @@
 const gulp = require('gulp')
 const less = require('gulp-less')
 const babel = require('gulp-babel')
+const autoprefixer = require('gulp-autoprefixer')
 const runSequence = require('run-sequence')
 const connect = require('gulp-connect')
 const proxy = require('http-proxy-middleware')
@@ -14,6 +15,10 @@ require('./createConfig').constants() // 引入生成配置js文件功能 --> ta
 gulp.task('dev:less', _ => {
     return gulp.src('src/**/*.less')
         .pipe(less())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest('src'))
         .pipe(connect.reload())
 })

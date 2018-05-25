@@ -1,65 +1,14 @@
-/* 通用样式 */
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-  user-select: none;
-  //font-family: "新宋体";
-}
-
-ul, ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.w100p {
-  width: 100%;
-}
-
-.h100p {
-  height: 100%;
-}
-
-.fl {
-  float: left;
-}
-
-.fr {
-  float: right;
-}
-
-.clearfix::after {
-  display: block;
-  clear: both;
-  height: 0;
-  content: "";
-  visibility: hidden;
-  overflow: hidden;
-}
-
-.align-center {
-  text-align: center;
-}
-
-.abs {
-  position: absolute;
-}
-
-.banner {
-  min-width: 1024px;
-}
-
-/* style */
-
+@import "../../common/base";
 // 设置首页layer page层的样式
 .index-layui-page.layui-layer-page {
-  margin-top: -1px * (255 / 2);
+  .layui-layer-title {
+    background-color: #1E9FFF;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+  }
   .layui-layer-content {
-    padding: 5px;
+    padding: 5px 20px;
   }
 }
 
@@ -88,7 +37,7 @@ a {
   left: 5px;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 501;
+  z-index: 502;
 }
 
 .aside.right-side {
@@ -105,7 +54,6 @@ a {
   width: 150px;
   height: 45px;
   line-height: 45px;
-  //text-align: center;
   padding-left: 45px;
   background: url(../../assets/imgs/nav_bg.png);
   color: #fff;
@@ -179,51 +127,41 @@ a {
 }
 
 .todos::before {
-  //background: url(../../assets/imgs/dbrw.png);
   background-position: 0 0;
 }
 
 .model-manger::before {
-  //background: url(../../assets/imgs/mxgl.png);
   background-position: -29px 0;
 }
 
 .order::before {
-  //background: url(../../assets/imgs/qzzx.png);
   background-position: -58px 0;
 }
 
 .large-activity::before {
-  //background: url(../../assets/imgs/dxhd.png);
   background-position: 0 -29px;
 }
 
 .bg-manger::before {
-  //background: url(../../assets/imgs/htgl.png);
   background-position: -29px -29px;
 }
 
 .danger-pub::before {
-  //background: url(../../assets/imgs/wbza.png);
   background-position: -58px -29px;
 }
 
 .special-pub::before {
-  //background: url(../../assets/imgs/thza.png);
   background-position: 0 -58px;
 }
 
 .security-pub::before {
-  //background: url(../../assets/imgs/bayza.png);
   background-position: -29px -58px;
 }
 
 .vip-site::before {
-  //background: url(../../assets/imgs/zdcs.png);
   background-position: -58px -58px;
 }
 
 .others-pub::before {
-  //background: url(../../assets/imgs/zaqtl.png);
   background-position: 0 -87px;
 }

@@ -345,9 +345,10 @@
          * @returns {{x: Number, y: Number}|*}
          */
         cltSize () {
-            if (this.__windowSize__) { return this.__windowSize__ }
-            this.__windowSize__ = {x: window.innerWidth, y: window.innerHeight}
-            return this.__windowSize__
+            // if (this.__windowSize__) { return this.__windowSize__ }
+            // this.__windowSize__ = {x: window.innerWidth, y: window.innerHeight}
+            // return this.__windowSize__
+            return {x: window.innerWidth, y: window.innerHeight}
         }
     }
 }(jQuery, window)
